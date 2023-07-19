@@ -13,9 +13,152 @@ li{
 a{
     text-decoration: none;
 }
+span{
+    color: rgba(255, 66, 165, 1);
+}
 /* common css end */
 
 /* header part start */
-
-
+.header{
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+}
+.logo h4{
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #0B0223;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .first_item ul li{
+    margin: 0px 18px ;
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-weight: 500;   
+    text-align: center;
+}
+.last_item{
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding: 8px;
+display: flex;
+align-items: center;
+}
+.last_item ul li{
+   margin-right: 8px;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+.last_item i{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.last_item .youtube{
+    color: #F61C0D;
+}
+.last_item .tiktok{
+    color:rgba(8, 255, 249, 1),rgba(240, 0, 68, 1),rgba(0, 0, 0, 1) ;
+}
 /* header part end */
+
+/* banner part start */
+
+
+/* banner part end */
+
+/* ====================================================
+==============Responsive Part start====================
+====================================================== */
+/* Responsive with mobile/small Device start*/
+@media screen and (max-width: 576px){
+    .header{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+    } 
+    .menu{
+        flex-direction: column;
+    }
+    .first_item{
+        margin: 10px 0px;
+    }
+    .first_item ul li{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
+/* Responsive with mobile/small Device end*/
+
+/* Responsive with medium/tablet device start */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .header{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .first_item {
+        margin: 15px 0px;
+    }
+    .first_item ul li{
+        text-align: center;
+    }
+}
+
+/* Responsive with medium/tablet device end */
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .header{
+      width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+/* ====================================================
+==============Responsive Part End====================
+====================================================== */
