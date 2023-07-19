@@ -93,8 +93,8 @@ align-items: center;
     padding: 10px;
 }
 .banner_content{
-
   color: #0B0223;
+ 
 }
 .banner_content h3{
     font-size: 2.8em;
@@ -113,7 +113,6 @@ margin-bottom: 24px;
     display: block;
     line-height: 1.6rem;
 }
-
 .banner_image img{
     width: 100%;
 }
@@ -192,34 +191,35 @@ margin-bottom: 24px;
     margin-left: 100px;
 }
 .position_image img{
-    width: 100%;
+    width: 8cm;
 }
 .position_image .change_position{
     width: 40%;
     position: relative;
-    bottom: 100px;
-    right: 80px;
+    bottom: 80px;
+    right: 60px;
 }
 
 /* online games positon content part end */
 .icon_content{
     margin: 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);   
+    place-items: center;
+}
+.icon_part img{
+    width: 30px;
 }
 .icon_part{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px;
+    padding: 5px;
     border-radius: 50px;
     border: 2px solid #fff;
 }
 
 .icon_part h4{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .icon_part:hover{
@@ -351,7 +351,7 @@ margin-bottom: 24px;
     text-align: center;
    }
    .position_image img{
-    width: 75%;
+    width: 100%;
     margin-left: 0px ;
     position: static;
    }
@@ -361,11 +361,19 @@ margin-bottom: 24px;
    }
 
    .icon_content{
-    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+   }
+   .icon_part{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
+   footer{
+    background-color: #0B0223;
+    width: 100%;
    }
    .footer ul{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 20px;
    }
@@ -377,7 +385,7 @@ margin-bottom: 24px;
    }
    .social_icon{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 20px;
    }
@@ -436,7 +444,9 @@ margin-bottom: 24px;
         margin-left: 0px;
        }
        .icon_content{
-        grid-template-columns: 2fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
        }
        .footer ul{
         display: grid;
