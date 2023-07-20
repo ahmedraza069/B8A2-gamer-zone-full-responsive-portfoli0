@@ -163,7 +163,51 @@ margin-bottom: 24px;
 .online_content_image img{
     width: 100%;
 }
+/* over lay content */
 
+.image_content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .image_content:hover .image {
+    opacity: 0.3;
+  }
+  
+  .image_content:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 16px 32px;
+  }
+
+
+/* over lay content */
 /* Online content end */
 
 /* online games position content part start*/
@@ -373,7 +417,7 @@ margin-bottom: 24px;
    }
    .footer ul{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 20px;
    }
@@ -389,6 +433,51 @@ margin-bottom: 24px;
     place-items: center;
     gap: 20px;
    }
+
+   /* overlay content */
+
+   .image_content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .image_content:hover .image {
+    opacity: 0.3;
+  }
+  
+  .image_content:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 16px 32px;
+  }
+
+   /* overlay content */
 
     /* Image posistion part end */
 }
